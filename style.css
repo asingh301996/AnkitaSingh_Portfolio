@@ -1,0 +1,179 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  font-family: 'KoHo', sans-serif;
+  margin: 0;
+}
+h1, h2 {
+  font-family: 'Cormorant', serif;
+  font-weight: 400;
+}
+h1 {
+  font-size: 60px;
+}
+h2 {
+  font-size: 40px;
+  margin-top: 0;
+}
+h3 {
+  margin: 0;
+}
+a {
+  color: #000000;
+}
+a:hover {
+  text-decoration: none;
+}
+.content-wrap {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 50px 50px;
+  overflow: hidden;
+}
+.hide {
+   display: none;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+
+/* Download button */
+.btn {
+  text-decoration: none;
+  background: #fdc695;
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  display: inline-block;
+}
+
+/* .goTop{
+  position: absolute;
+  bottom: 50px;
+  right: 20px;
+  color:#C1576A;
+  background: transparent;
+}*/
+
+p{
+  text-align: justify;
+  text-justify:auto;
+}
+/* Header and Footer
+-------------------------*/
+header, footer {
+  background: #cccccc;
+  color: #000000;
+}
+/* header */
+header {
+  padding-top: 50px;
+  position: relative;
+}
+header h1, header h2 {
+  color: #000000;
+  margin: 0;
+}
+.profile-img {
+  border-radius: 70%;
+}
+
+.content-wrap img {
+  width: 200px;
+  height: 200px;
+}
+
+.download {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/* footer */
+footer {
+  text-align: center;
+}
+.contact-info a {
+  padding: 10px;
+  display: inline-block;
+}
+
+
+/* Navigation
+-------------------------*/
+nav {
+  text-align: center;
+  background: rgb(185, 150, 92);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  /*z-index: 100;*/
+}
+nav a {
+  display: inline-block;
+  padding: 15px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+
+/* Work Experience
+-------------------------*/
+.work {
+  background: #ffffff;
+  color: #000000;
+}
+h3 ~ p {
+  margin: 0;
+}
+.job-description {
+  margin-bottom: 25px;
+}
+.job-description p:first-of-type {
+  margin-top: 0;
+}
+
+
+/* Education
+-------------------------*/
+.education {
+  color: #000000;
+  background: linear-gradient(rgba(249, 249, 249, 0.8), rgba(118, 160, 160, 0.5)),
+              url(../images/haskell_campus_building.jpg) no-repeat fixed;
+  background-size: cover;
+}
+p + h3 {
+  margin-top: 30px;
+}
+
+
+
+/* Media Queries
+-------------------------*/
+@media (min-width: 900px) {
+  .col-narrow {
+    width: 40%;
+    float: left;
+  }
+  .col-wide {
+    width: 60%;
+    float: left;
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 899px){
+  header {
+    text-align: center;
+  }
+  .profile-img {
+    width: 400px;
+    height: 400px;
+    border-radius: 100%;
+  }
+}
